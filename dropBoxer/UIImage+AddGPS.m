@@ -32,20 +32,24 @@
     if(!GPSDictionary)
         GPSDictionary = [NSMutableDictionary dictionary];
     
-    [GPSDictionary setValue:[NSNumber numberWithDouble:currentLatitude] forKey:(NSString*)kCGImagePropertyGPSLatitude];
-    [GPSDictionary setValue:[NSNumber numberWithDouble:currentLongitude] forKey:(NSString*)kCGImagePropertyGPSLongitude];
-    
     NSString* ref;
-    if (currentLatitude <0.0)
+    if (currentLatitude <0.0){
         ref = @"S";
+        currentLatitude *= (-1);
+    }
     else
         ref =@"N";
     [GPSDictionary setValue:ref forKey:(NSString*)kCGImagePropertyGPSLatitudeRef];
     
-    if (currentLongitude <0.0)
+    if (currentLongitude <0.0) {
         ref = @"W";
+        currentLongitude *= (-1);
+    }
     else
         ref =@"E";
+    
+    [GPSDictionary setValue:[NSNumber numberWithDouble:currentLatitude] forKey:(NSString*)kCGImagePropertyGPSLatitude];
+    [GPSDictionary setValue:[NSNumber numberWithDouble:currentLongitude] forKey:(NSString*)kCGImagePropertyGPSLongitude];
     [GPSDictionary setValue:ref forKey:(NSString*)kCGImagePropertyGPSLongitudeRef];
     
     [GPSDictionary setValue:[NSNumber numberWithFloat:location.altitude] forKey:(NSString*)kCGImagePropertyGPSAltitude];
