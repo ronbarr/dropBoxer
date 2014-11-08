@@ -167,7 +167,6 @@
     
     NSBlockOperation * saveBlock = [NSBlockOperation blockOperationWithBlock:^{
         DBPath * path = [[DBPath alloc] initWithString:DIRECTORY];
-        NSLog(@"path %@", path);
         DBError * error = nil;
         BOOL folderOK = NO;
         if ([fileSystem createFolder:path error:&error]) { //create our folder
@@ -197,6 +196,7 @@
         
         if (!error) {
             CLLocation * currentLocation = [[CurrentLocationManager defaultLocationServicesManager] lastKnownLocation];
+            NSLog(@"current %@",currentLocation);
             NSData * data = [image getDataWithLocation:currentLocation] ;
             success = [photoFile writeData:data error:&error];
             [photoFile close];

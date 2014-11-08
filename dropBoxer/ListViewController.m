@@ -11,6 +11,7 @@
 #import "ModelController.h"
 #import "Keys.h"
 #import "DetailController.h"
+#import "CurrentLocationManager.h"
 
 @interface ListViewController ()
 
@@ -20,9 +21,9 @@
 //The image to show in the detail view
 @property (strong, nonatomic) DBPath * detailImagePath;
 
-//Convenience pointers to singleton
+//Convenience pointers to singletons
 @property (strong, nonatomic) DropBoxManager * dropBoxManager;
-
+@property (strong, nonatomic) CurrentLocationManager * locationManager;
 
 @end
 
@@ -35,8 +36,9 @@
     self.modelController.tableDelegate = self;
     self.tableView.delegate = self.modelController;
     self.tableView.dataSource = self.modelController;
+    self.locationManager = [CurrentLocationManager defaultLocationServicesManager];
+    
     self.dropBoxManager = [DropBoxManager sharedDropBoxManager];
-
 }
 
 -(void) viewDidAppear:(BOOL)animated {
@@ -44,6 +46,9 @@
     
     if (!self.dropBoxManager.isAuthorized) {
          [self.dropBoxManager authorizeUserInViewController:self];
+    }
+    else if (!self.locationManager) {
+        self.locationManager = [CurrentLocationManager defaultLocationServicesManager];
     }
    
 }
