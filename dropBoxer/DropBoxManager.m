@@ -181,7 +181,7 @@
         
         error = nil;
         BOOL success = NO;
-        NSInteger iterator = 0;
+        NSInteger iterator = 0; 
         DBFile * photoFile = nil;
         
         while (!success ) {
