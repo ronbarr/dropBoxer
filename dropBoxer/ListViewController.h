@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ModelControllerDelegate.h"
 
-@interface ListViewController : UICollectionViewController
+@interface ListViewController : UITableViewController <ModelControllerDelegate>
 
 
 @end

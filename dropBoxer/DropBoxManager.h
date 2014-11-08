@@ -11,12 +11,14 @@
 
 @interface DropBoxManager : NSObject
 
+@property BOOL isAuthorized;
+
 +(instancetype) sharedDropBoxManager;
 
 -(void) authorizeUserInViewController:(UIViewController *) viewController;
 
--(NSArray *) fileListAtPath:(DBPath *) path ;
+-(void) fetchImageAtPath:(DBPath *) path thumbOK:(BOOL) thumbOK destination:(UIImageView *) photo ;
 
--(UIImage *) imageInFile:(DBFile *) file thumbOK:(BOOL) thumbOK ;
+-(NSArray *) photoList;
 
 @end

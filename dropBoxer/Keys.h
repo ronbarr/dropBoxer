@@ -10,3 +10,6 @@
 
 extern NSString * const kAccountLinked;
 extern NSString * const kFilesChanged;
+
+extern NSString * const kDefaultCell;
+extern NSString * const kDetail;

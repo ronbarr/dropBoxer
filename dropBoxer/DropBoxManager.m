@@ -48,6 +48,8 @@
                                                  selector:@selector(authorized)
                                                      name:kAccountLinked
                                                    object:nil];
+        self.fileList = nil;
+        self.isAuthorized = NO;
     }
     return self;
 }
@@ -62,23 +64,27 @@
      
         We'll do this in the background */
     
+    self.isAuthorized = YES;
+    
     [self.fileSystem addObserver:self
            forPathAndDescendants:[DBPath root] block:^{
                [DropBoxManager notifyFilesChanged];
            }];
 
     self.fileSystem = [[DBFilesystem alloc] initWithAccount:self.accountManager.linkedAccount];
+    NSUInteger currentNumberOfFiles = self.fileList.count;
+    
     __block NSArray * fileList = nil;
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
         fileList = [self listOfFiles:[DBPath root]];
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            if (fileList.count) {
+            self.fileList = [fileList mutableCopy];
+            if (fileList.count != currentNumberOfFiles) {
                 [DropBoxManager notifyFilesChanged];
             }
-            self.fileList = [fileList mutableCopy];
-        });
+         });
     });
    }
 
@@ -108,17 +114,38 @@
     return photos;
 }
 
--(NSArray *) fileListAtPath:(DBPath *) path {
-    NSArray * photos = nil;
-    return photos;
-}
-
--(UIImage *) imageInFile:(DBFile *) file thumbOK:(BOOL) thumbOK {
+-(void) fetchImageAtPath:(DBPath *) path thumbOK:(BOOL) thumbOK destination:(UIImageView *) photo {
     
-    return nil;
+    __block UIImage * returnedPhoto;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        
+    DBFile * photoFile = nil;
+    DBError * error = nil;
+        
+     
+    if (thumbOK) {
+        photoFile = [self.fileSystem openThumbnail:path
+                                        ofSize:DBThumbSizeM
+                                      inFormat:DBThumbFormatPNG
+                                         error:&error];
+    }
+    else {
+        photoFile = [self.fileSystem openFile:path
+                                    error:&error];
+    }
+    
+    if (!error) {
+            returnedPhoto = [UIImage imageWithData:[photoFile readData:&error]];
+    }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            photo.image = returnedPhoto;
+        });
+    });
+                   
+
 }
 
-
-
-
+-(NSArray *) photoList {
+    return [self.fileList copy];
+}
 @end

@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ListViewController.h"
+#import "ModelControllerDelegate.h"
 
-@interface ModelController : NSObject
+@class ListViewController;
 
-@property (strong, nonatomic) ListViewController * listController;
+@interface ModelController : NSObject <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) id <ModelControllerDelegate> tableDelegate;
 
 @end

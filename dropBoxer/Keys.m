@@ -10,3 +10,6 @@
 
 NSString * const kAccountLinked = @"accountLinked";
 NSString * const kFilesChanged = @"filesChanged";
+
+NSString * const kDefaultCell = @"defaultCell";
+NSString * const kDetail = @"detail";
