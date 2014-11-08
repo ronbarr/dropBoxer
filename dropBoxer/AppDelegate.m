@@ -27,8 +27,7 @@
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
     ((UITabBarItem *)tabBarController.tabBar.items[0]).selectedImage = [UIImage imageNamed:@"stack_of_photos_filled"];
     ((UITabBarItem *)tabBarController.tabBar.items[1]).selectedImage = [UIImage imageNamed:@"slr_camera2_filled.png"];
-    ((UITabBarItem *)tabBarController.tabBar.items[2]).selectedImage = [UIImage imageNamed:@"globe_filled"];
-    
+     
     return YES;
 }
 

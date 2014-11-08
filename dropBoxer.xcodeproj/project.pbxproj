@@ -11,6 +11,7 @@
 		023FC3871A0E5953004F2070 /* DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023FC3861A0E5953004F2070 /* DetailController.m */; };
 		025039C91A0E837500D9656D /* CurrentLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 025039C81A0E837500D9656D /* CurrentLocationManager.m */; };
 		025039CC1A0E877800D9656D /* UIImage+AddGPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 025039CB1A0E877800D9656D /* UIImage+AddGPS.m */; };
+		028B79A11A0E99C500F8F852 /* slr_camera2_filled-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 028B79A01A0E99C500F8F852 /* slr_camera2_filled-512.png */; };
 		02C1F24B1A0E10450072655D /* DropBoxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C1F24A1A0E10450072655D /* DropBoxManager.m */; };
 		02C1F2511A0E10950072655D /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C1F2501A0E10950072655D /* ModelController.m */; };
 		02C1F2541A0E11900072655D /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C1F2531A0E11900072655D /* CameraController.m */; };
@@ -72,6 +73,7 @@
 		025039C81A0E837500D9656D /* CurrentLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentLocationManager.m; sourceTree = "<group>"; };
 		025039CA1A0E877800D9656D /* UIImage+AddGPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AddGPS.h"; sourceTree = "<group>"; };
 		025039CB1A0E877800D9656D /* UIImage+AddGPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AddGPS.m"; sourceTree = "<group>"; };
+		028B79A01A0E99C500F8F852 /* slr_camera2_filled-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slr_camera2_filled-512.png"; sourceTree = "<group>"; };
 		02C1F2491A0E10450072655D /* DropBoxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropBoxManager.h; sourceTree = "<group>"; };
 		02C1F24A1A0E10450072655D /* DropBoxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropBoxManager.m; sourceTree = "<group>"; };
 		02C1F24F1A0E10950072655D /* ModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 		02C1F2791A0E1C480072655D /* bar button images */ = {
 			isa = PBXGroup;
 			children = (
+				028B79A01A0E99C500F8F852 /* slr_camera2_filled-512.png */,
 				02C1F2551A0E19750072655D /* globe_filled.png */,
 				02C1F2561A0E19750072655D /* globe_filled@2x.png */,
 				02C1F2571A0E19750072655D /* globe_filled@3x.png */,
@@ -370,6 +373,7 @@
 				02C1F2851A0E1D320072655D /* slr_camera2@3x.png in Resources */,
 				02C1F26C1A0E19750072655D /* stack_of_photos@3x.png in Resources */,
 				02C1F2681A0E19750072655D /* stack_of_photos_filled@2x.png in Resources */,
+				028B79A11A0E99C500F8F852 /* slr_camera2_filled-512.png in Resources */,
 				02F5BF381A0DE7D700A52C6E /* Images.xcassets in Resources */,
 				02C1F2611A0E19750072655D /* globe_filled.png in Resources */,
 				02C1F2811A0E1D320072655D /* slr_camera2_filled@2x.png in Resources */,

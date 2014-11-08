@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6249" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6243"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -80,7 +81,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac4-NN-XnX">
-                                <rect key="frame" x="10" y="10" width="590" height="554"/>
+                                <rect key="frame" x="10" y="10" width="590" height="546"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -88,12 +89,23 @@
                                     <action selector="tapped:" destination="fwk-jn-3JP" eventType="touchUpInside" id="5j1-pY-3Np"/>
                                 </connections>
                             </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTr-VO-1BA">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="ptD-VH-Mvf">
+                                        <connections>
+                                            <action selector="shareTapped:" destination="fwk-jn-3JP" id="Ozm-E2-pyM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ac4-NN-XnX" firstAttribute="leading" secondItem="xtu-fz-eax" secondAttribute="leadingMargin" id="5OO-CQ-84V"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ac4-NN-XnX" secondAttribute="trailing" id="H6I-g6-8ik"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BIG-HC-qGs" secondAttribute="trailing" id="Man-j9-EAW"/>
+                            <constraint firstItem="fkU-zu-Dow" firstAttribute="top" secondItem="eTr-VO-1BA" secondAttribute="bottom" id="P9v-fA-IWB"/>
                             <constraint firstItem="fkU-zu-Dow" firstAttribute="top" secondItem="BIG-HC-qGs" secondAttribute="bottom" id="S6i-gt-afs"/>
                             <constraint firstItem="fkU-zu-Dow" firstAttribute="top" secondItem="Ac4-NN-XnX" secondAttribute="bottom" id="S87-ee-Yn7"/>
                             <constraint firstItem="BIG-HC-qGs" firstAttribute="leading" secondItem="xtu-fz-eax" secondAttribute="leadingMargin" id="h95-Ff-6hC"/>
@@ -109,20 +121,6 @@
             </objects>
             <point key="canvasLocation" x="1401" y="-333"/>
         </scene>
-        <!--Map-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController id="8rJ-Kc-sve" customClass="MapViewController" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="bvx-jg-pxA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </mapView>
-                    <tabBarItem key="tabBarItem" title="Map" image="globe" id="cPa-gy-q4n"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="750" y="360"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -136,7 +134,6 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="f0a-2T-XCw" kind="relationship" relationship="viewControllers" id="eaP-Yv-pwi"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -154,18 +151,32 @@
                     <view key="view" contentMode="scaleToFill" id="6jU-hC-YgG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slr_camera2_filled-512.png" translatesAutoresizingMaskIntoConstraints="NO" id="Knb-d7-ui1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Knb-d7-ui1" secondAttribute="height" multiplier="1:1" id="bwd-Dm-Clu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Knb-d7-ui1" firstAttribute="leading" secondItem="6jU-hC-YgG" secondAttribute="leadingMargin" constant="-16" id="0vE-Ov-H7B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Knb-d7-ui1" secondAttribute="trailing" constant="-16" id="KbS-K0-FYY"/>
+                            <constraint firstItem="Knb-d7-ui1" firstAttribute="top" secondItem="6jU-hC-YgG" secondAttribute="topMargin" id="xUO-q3-xuH"/>
+                            <constraint firstItem="Knb-d7-ui1" firstAttribute="bottom" secondItem="6jU-hC-YgG" secondAttribute="bottomMargin" id="zua-gL-hPQ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Take Picture" image="slr_camera2" id="kFB-v2-6cH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wty-8T-gbC" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="88" y="746"/>
+            <point key="canvasLocation" x="750" y="347"/>
         </scene>
     </scenes>
     <resources>
-        <image name="globe" width="30" height="30"/>
         <image name="slr_camera2" width="30" height="30"/>
+        <image name="slr_camera2_filled-512.png" width="512" height="512"/>
         <image name="stack_of_photos.png" width="25" height="25"/>
     </resources>
 </document>

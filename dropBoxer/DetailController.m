@@ -12,6 +12,7 @@
 @interface DetailController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *image;
+- (IBAction)shareTapped:(id)sender;
 
 - (IBAction)tapped:(id)sender;
 @end
@@ -23,6 +24,17 @@
     [[DropBoxManager sharedDropBoxManager] fetchImageAtPath:self.photoPath
                                                     thumbOK:NO
                                                 destination:self.image];
+}
+
+- (IBAction)shareTapped:(id)sender {
+    UIImage * image = self.image.image;
+      UIActivityViewController *controller =
+    [[UIActivityViewController alloc]
+     initWithActivityItems:@[image]
+     applicationActivities:nil];
+    
+    [self presentViewController:controller animated:YES completion:nil];
+
 }
 
 - (IBAction)tapped:(id)sender {
