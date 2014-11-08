@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Keys.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +18,34 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    /* Workaround for nasty bug in Xcode 6.1
+     http://stackoverflow.com/questions/25612842/xcode-6-beta-6-cuicatalog-invalid-asset-name-supplied-null-or-invalid-scale 
+     */
+    
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    ((UITabBarItem *)tabBarController.tabBar.items[0]).selectedImage = [UIImage imageNamed:@"stack_of_photos_filled"];
+    ((UITabBarItem *)tabBarController.tabBar.items[1]).selectedImage = [UIImage imageNamed:@"slr_camera2_filled.png"];
+    ((UITabBarItem *)tabBarController.tabBar.items[2]).selectedImage = [UIImage imageNamed:@"globe_filled"];
+    
     return YES;
 }
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    DBAccount *account = [[DBAccountManager sharedManager] handleOpenURL:url];
+    if (account && account.linked) {
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:kAccountLinked
+                                                            object:nil];
+        return YES;
+    }
+    return NO;
+}
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

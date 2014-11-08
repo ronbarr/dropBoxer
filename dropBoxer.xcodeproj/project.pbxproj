@@ -7,10 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02C1F24B1A0E10450072655D /* DropBoxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C1F24A1A0E10450072655D /* DropBoxManager.m */; };
+		02C1F2511A0E10950072655D /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C1F2501A0E10950072655D /* ModelController.m */; };
+		02C1F2541A0E11900072655D /* CameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C1F2531A0E11900072655D /* CameraManager.m */; };
+		02C1F2611A0E19750072655D /* globe_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F2551A0E19750072655D /* globe_filled.png */; };
+		02C1F2621A0E19750072655D /* globe_filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F2561A0E19750072655D /* globe_filled@2x.png */; };
+		02C1F2631A0E19750072655D /* globe_filled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F2571A0E19750072655D /* globe_filled@3x.png */; };
+		02C1F2641A0E19750072655D /* globe.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F2581A0E19750072655D /* globe.png */; };
+		02C1F2651A0E19750072655D /* globe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F2591A0E19750072655D /* globe@2x.png */; };
+		02C1F2661A0E19750072655D /* globe@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F25A1A0E19750072655D /* globe@3x.png */; };
+		02C1F2671A0E19750072655D /* stack_of_photos_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F25B1A0E19750072655D /* stack_of_photos_filled.png */; };
+		02C1F2681A0E19750072655D /* stack_of_photos_filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F25C1A0E19750072655D /* stack_of_photos_filled@2x.png */; };
+		02C1F2691A0E19750072655D /* stack_of_photos_filled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F25D1A0E19750072655D /* stack_of_photos_filled@3x.png */; };
+		02C1F26A1A0E19750072655D /* stack_of_photos.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F25E1A0E19750072655D /* stack_of_photos.png */; };
+		02C1F26B1A0E19750072655D /* stack_of_photos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F25F1A0E19750072655D /* stack_of_photos@2x.png */; };
+		02C1F26C1A0E19750072655D /* stack_of_photos@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F2601A0E19750072655D /* stack_of_photos@3x.png */; };
+		02C1F2801A0E1D320072655D /* slr_camera2_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F27A1A0E1D320072655D /* slr_camera2_filled.png */; };
+		02C1F2811A0E1D320072655D /* slr_camera2_filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F27B1A0E1D320072655D /* slr_camera2_filled@2x.png */; };
+		02C1F2821A0E1D320072655D /* slr_camera2_filled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F27C1A0E1D320072655D /* slr_camera2_filled@3x.png */; };
+		02C1F2831A0E1D320072655D /* slr_camera2.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F27D1A0E1D320072655D /* slr_camera2.png */; };
+		02C1F2841A0E1D320072655D /* slr_camera2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F27E1A0E1D320072655D /* slr_camera2@2x.png */; };
+		02C1F2851A0E1D320072655D /* slr_camera2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F27F1A0E1D320072655D /* slr_camera2@3x.png */; };
+		02C1F28A1A0E1F6E0072655D /* Dropbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C1F2891A0E1F6E0072655D /* Dropbox.framework */; };
+		02C1F28C1A0E20EE0072655D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C1F28B1A0E20EE0072655D /* CFNetwork.framework */; };
+		02C1F28E1A0E20F70072655D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C1F28D1A0E20F70072655D /* Security.framework */; };
+		02C1F2901A0E21030072655D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C1F28F1A0E21030072655D /* SystemConfiguration.framework */; };
+		02C1F2921A0E210D0072655D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C1F2911A0E210D0072655D /* QuartzCore.framework */; };
+		02C1F2941A0E211F0072655D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C1F2931A0E211F0072655D /* libc++.dylib */; };
+		02C1F2961A0E212F0072655D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C1F2951A0E212F0072655D /* libz.dylib */; };
+		02C1F2991A0E230A0072655D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C1F2981A0E230A0072655D /* UIKit.framework */; };
+		02C1F29E1A0E2D0A0072655D /* Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C1F29D1A0E2D0A0072655D /* Keys.m */; };
 		02F5BF2A1A0DE7D700A52C6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F5BF291A0DE7D700A52C6E /* main.m */; };
 		02F5BF2D1A0DE7D700A52C6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F5BF2C1A0DE7D700A52C6E /* AppDelegate.m */; };
-		02F5BF301A0DE7D700A52C6E /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F5BF2F1A0DE7D700A52C6E /* FirstViewController.m */; };
-		02F5BF331A0DE7D700A52C6E /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F5BF321A0DE7D700A52C6E /* SecondViewController.m */; };
+		02F5BF301A0DE7D700A52C6E /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F5BF2F1A0DE7D700A52C6E /* ListViewController.m */; };
+		02F5BF331A0DE7D700A52C6E /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F5BF321A0DE7D700A52C6E /* MapViewController.m */; };
 		02F5BF361A0DE7D700A52C6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F5BF341A0DE7D700A52C6E /* Main.storyboard */; };
 		02F5BF381A0DE7D700A52C6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F5BF371A0DE7D700A52C6E /* Images.xcassets */; };
 		02F5BF3B1A0DE7D700A52C6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02F5BF391A0DE7D700A52C6E /* LaunchScreen.xib */; };
@@ -28,15 +58,50 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02C1F2491A0E10450072655D /* DropBoxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropBoxManager.h; sourceTree = "<group>"; };
+		02C1F24A1A0E10450072655D /* DropBoxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropBoxManager.m; sourceTree = "<group>"; };
+		02C1F24F1A0E10950072655D /* ModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
+		02C1F2501A0E10950072655D /* ModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
+		02C1F2521A0E11900072655D /* CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
+		02C1F2531A0E11900072655D /* CameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraManager.m; sourceTree = "<group>"; };
+		02C1F2551A0E19750072655D /* globe_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe_filled.png; sourceTree = "<group>"; };
+		02C1F2561A0E19750072655D /* globe_filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "globe_filled@2x.png"; sourceTree = "<group>"; };
+		02C1F2571A0E19750072655D /* globe_filled@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "globe_filled@3x.png"; sourceTree = "<group>"; };
+		02C1F2581A0E19750072655D /* globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe.png; sourceTree = "<group>"; };
+		02C1F2591A0E19750072655D /* globe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "globe@2x.png"; sourceTree = "<group>"; };
+		02C1F25A1A0E19750072655D /* globe@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "globe@3x.png"; sourceTree = "<group>"; };
+		02C1F25B1A0E19750072655D /* stack_of_photos_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stack_of_photos_filled.png; sourceTree = "<group>"; };
+		02C1F25C1A0E19750072655D /* stack_of_photos_filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stack_of_photos_filled@2x.png"; sourceTree = "<group>"; };
+		02C1F25D1A0E19750072655D /* stack_of_photos_filled@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stack_of_photos_filled@3x.png"; sourceTree = "<group>"; };
+		02C1F25E1A0E19750072655D /* stack_of_photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stack_of_photos.png; sourceTree = "<group>"; };
+		02C1F25F1A0E19750072655D /* stack_of_photos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stack_of_photos@2x.png"; sourceTree = "<group>"; };
+		02C1F2601A0E19750072655D /* stack_of_photos@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stack_of_photos@3x.png"; sourceTree = "<group>"; };
+		02C1F27A1A0E1D320072655D /* slr_camera2_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slr_camera2_filled.png; sourceTree = "<group>"; };
+		02C1F27B1A0E1D320072655D /* slr_camera2_filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slr_camera2_filled@2x.png"; sourceTree = "<group>"; };
+		02C1F27C1A0E1D320072655D /* slr_camera2_filled@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slr_camera2_filled@3x.png"; sourceTree = "<group>"; };
+		02C1F27D1A0E1D320072655D /* slr_camera2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slr_camera2.png; sourceTree = "<group>"; };
+		02C1F27E1A0E1D320072655D /* slr_camera2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slr_camera2@2x.png"; sourceTree = "<group>"; };
+		02C1F27F1A0E1D320072655D /* slr_camera2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slr_camera2@3x.png"; sourceTree = "<group>"; };
+		02C1F2891A0E1F6E0072655D /* Dropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Dropbox.framework; sourceTree = "<group>"; };
+		02C1F28B1A0E20EE0072655D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		02C1F28D1A0E20F70072655D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		02C1F28F1A0E21030072655D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		02C1F2911A0E210D0072655D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		02C1F2931A0E211F0072655D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		02C1F2951A0E212F0072655D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		02C1F2981A0E230A0072655D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		02C1F29B1A0E287D0072655D /* dropBoxer.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dropBoxer.pch; sourceTree = "<group>"; };
+		02C1F29C1A0E2D0A0072655D /* Keys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keys.h; sourceTree = "<group>"; };
+		02C1F29D1A0E2D0A0072655D /* Keys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Keys.m; sourceTree = "<group>"; };
 		02F5BF241A0DE7D700A52C6E /* dropBoxer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dropBoxer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F5BF281A0DE7D700A52C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02F5BF291A0DE7D700A52C6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		02F5BF2B1A0DE7D700A52C6E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		02F5BF2C1A0DE7D700A52C6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		02F5BF2E1A0DE7D700A52C6E /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		02F5BF2F1A0DE7D700A52C6E /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		02F5BF311A0DE7D700A52C6E /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		02F5BF321A0DE7D700A52C6E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		02F5BF2E1A0DE7D700A52C6E /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		02F5BF2F1A0DE7D700A52C6E /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		02F5BF311A0DE7D700A52C6E /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		02F5BF321A0DE7D700A52C6E /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		02F5BF351A0DE7D700A52C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02F5BF371A0DE7D700A52C6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		02F5BF3A1A0DE7D700A52C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -50,6 +115,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C1F2961A0E212F0072655D /* libz.dylib in Frameworks */,
+				02C1F2941A0E211F0072655D /* libc++.dylib in Frameworks */,
+				02C1F2921A0E210D0072655D /* QuartzCore.framework in Frameworks */,
+				02C1F2901A0E21030072655D /* SystemConfiguration.framework in Frameworks */,
+				02C1F28E1A0E20F70072655D /* Security.framework in Frameworks */,
+				02C1F28C1A0E20EE0072655D /* CFNetwork.framework in Frameworks */,
+				02C1F2991A0E230A0072655D /* UIKit.framework in Frameworks */,
+				02C1F28A1A0E1F6E0072655D /* Dropbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +136,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02C1F2791A0E1C480072655D /* bar button images */ = {
+			isa = PBXGroup;
+			children = (
+				02C1F2551A0E19750072655D /* globe_filled.png */,
+				02C1F2561A0E19750072655D /* globe_filled@2x.png */,
+				02C1F2571A0E19750072655D /* globe_filled@3x.png */,
+				02C1F2581A0E19750072655D /* globe.png */,
+				02C1F2591A0E19750072655D /* globe@2x.png */,
+				02C1F25A1A0E19750072655D /* globe@3x.png */,
+				02C1F25B1A0E19750072655D /* stack_of_photos_filled.png */,
+				02C1F27A1A0E1D320072655D /* slr_camera2_filled.png */,
+				02C1F27B1A0E1D320072655D /* slr_camera2_filled@2x.png */,
+				02C1F27C1A0E1D320072655D /* slr_camera2_filled@3x.png */,
+				02C1F27D1A0E1D320072655D /* slr_camera2.png */,
+				02C1F27E1A0E1D320072655D /* slr_camera2@2x.png */,
+				02C1F27F1A0E1D320072655D /* slr_camera2@3x.png */,
+				02C1F25C1A0E19750072655D /* stack_of_photos_filled@2x.png */,
+				02C1F25D1A0E19750072655D /* stack_of_photos_filled@3x.png */,
+				02C1F25E1A0E19750072655D /* stack_of_photos.png */,
+				02C1F25F1A0E19750072655D /* stack_of_photos@2x.png */,
+				02C1F2601A0E19750072655D /* stack_of_photos@3x.png */,
+			);
+			name = "bar button images";
+			sourceTree = "<group>";
+		};
+		02C1F2861A0E1F090072655D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02C1F2981A0E230A0072655D /* UIKit.framework */,
+				02C1F2951A0E212F0072655D /* libz.dylib */,
+				02C1F2931A0E211F0072655D /* libc++.dylib */,
+				02C1F2911A0E210D0072655D /* QuartzCore.framework */,
+				02C1F28F1A0E21030072655D /* SystemConfiguration.framework */,
+				02C1F28D1A0E20F70072655D /* Security.framework */,
+				02C1F28B1A0E20EE0072655D /* CFNetwork.framework */,
+				02C1F2891A0E1F6E0072655D /* Dropbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		02F5BF1B1A0DE7D700A52C6E = {
 			isa = PBXGroup;
 			children = (
@@ -84,15 +197,24 @@
 		02F5BF261A0DE7D700A52C6E /* dropBoxer */ = {
 			isa = PBXGroup;
 			children = (
+				02C1F29C1A0E2D0A0072655D /* Keys.h */,
+				02C1F29D1A0E2D0A0072655D /* Keys.m */,
+				02F5BF341A0DE7D700A52C6E /* Main.storyboard */,
 				02F5BF2B1A0DE7D700A52C6E /* AppDelegate.h */,
 				02F5BF2C1A0DE7D700A52C6E /* AppDelegate.m */,
-				02F5BF2E1A0DE7D700A52C6E /* FirstViewController.h */,
-				02F5BF2F1A0DE7D700A52C6E /* FirstViewController.m */,
-				02F5BF311A0DE7D700A52C6E /* SecondViewController.h */,
-				02F5BF321A0DE7D700A52C6E /* SecondViewController.m */,
-				02F5BF341A0DE7D700A52C6E /* Main.storyboard */,
+				02F5BF2E1A0DE7D700A52C6E /* ListViewController.h */,
+				02F5BF2F1A0DE7D700A52C6E /* ListViewController.m */,
+				02F5BF311A0DE7D700A52C6E /* MapViewController.h */,
+				02F5BF321A0DE7D700A52C6E /* MapViewController.m */,
+				02C1F24F1A0E10950072655D /* ModelController.h */,
+				02C1F2501A0E10950072655D /* ModelController.m */,
+				02C1F2491A0E10450072655D /* DropBoxManager.h */,
+				02C1F24A1A0E10450072655D /* DropBoxManager.m */,
+				02C1F2521A0E11900072655D /* CameraManager.h */,
+				02C1F2531A0E11900072655D /* CameraManager.m */,
 				02F5BF371A0DE7D700A52C6E /* Images.xcassets */,
 				02F5BF391A0DE7D700A52C6E /* LaunchScreen.xib */,
+				02C1F2861A0E1F090072655D /* Frameworks */,
 				02F5BF271A0DE7D700A52C6E /* Supporting Files */,
 			);
 			path = dropBoxer;
@@ -101,6 +223,8 @@
 		02F5BF271A0DE7D700A52C6E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				02C1F29B1A0E287D0072655D /* dropBoxer.pch */,
+				02C1F2791A0E1C480072655D /* bar button images */,
 				02F5BF281A0DE7D700A52C6E /* Info.plist */,
 				02F5BF291A0DE7D700A52C6E /* main.m */,
 			);
@@ -204,9 +328,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02C1F26A1A0E19750072655D /* stack_of_photos.png in Resources */,
+				02C1F2821A0E1D320072655D /* slr_camera2_filled@3x.png in Resources */,
+				02C1F2691A0E19750072655D /* stack_of_photos_filled@3x.png in Resources */,
+				02C1F2621A0E19750072655D /* globe_filled@2x.png in Resources */,
+				02C1F2831A0E1D320072655D /* slr_camera2.png in Resources */,
+				02C1F2801A0E1D320072655D /* slr_camera2_filled.png in Resources */,
+				02C1F2641A0E19750072655D /* globe.png in Resources */,
+				02C1F2671A0E19750072655D /* stack_of_photos_filled.png in Resources */,
+				02C1F2651A0E19750072655D /* globe@2x.png in Resources */,
+				02C1F2631A0E19750072655D /* globe_filled@3x.png in Resources */,
 				02F5BF361A0DE7D700A52C6E /* Main.storyboard in Resources */,
 				02F5BF3B1A0DE7D700A52C6E /* LaunchScreen.xib in Resources */,
+				02C1F26B1A0E19750072655D /* stack_of_photos@2x.png in Resources */,
+				02C1F2661A0E19750072655D /* globe@3x.png in Resources */,
+				02C1F2841A0E1D320072655D /* slr_camera2@2x.png in Resources */,
+				02C1F2851A0E1D320072655D /* slr_camera2@3x.png in Resources */,
+				02C1F26C1A0E19750072655D /* stack_of_photos@3x.png in Resources */,
+				02C1F2681A0E19750072655D /* stack_of_photos_filled@2x.png in Resources */,
 				02F5BF381A0DE7D700A52C6E /* Images.xcassets in Resources */,
+				02C1F2611A0E19750072655D /* globe_filled.png in Resources */,
+				02C1F2811A0E1D320072655D /* slr_camera2_filled@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,9 +366,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02F5BF331A0DE7D700A52C6E /* SecondViewController.m in Sources */,
+				02F5BF331A0DE7D700A52C6E /* MapViewController.m in Sources */,
+				02C1F24B1A0E10450072655D /* DropBoxManager.m in Sources */,
 				02F5BF2D1A0DE7D700A52C6E /* AppDelegate.m in Sources */,
-				02F5BF301A0DE7D700A52C6E /* FirstViewController.m in Sources */,
+				02C1F2541A0E11900072655D /* CameraManager.m in Sources */,
+				02C1F2511A0E10950072655D /* ModelController.m in Sources */,
+				02C1F29E1A0E2D0A0072655D /* Keys.m in Sources */,
+				02F5BF301A0DE7D700A52C6E /* ListViewController.m in Sources */,
 				02F5BF2A1A0DE7D700A52C6E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +497,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dropBoxer",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = dropBoxer.pch;
 				INFOPLIST_FILE = dropBoxer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +513,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dropBoxer",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = dropBoxer.pch;
 				INFOPLIST_FILE = dropBoxer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,6 +578,7 @@
 				02F5BF4C1A0DE7D700A52C6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02F5BF4D1A0DE7D700A52C6E /* Build configuration list for PBXNativeTarget "dropBoxerTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +587,7 @@
 				02F5BF4F1A0DE7D700A52C6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
