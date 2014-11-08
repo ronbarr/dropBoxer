@@ -14,6 +14,7 @@
 @interface ModelController ()
 
 @property (strong, nonatomic) NSArray * photoList;
+@property (strong, nonatomic) NSMutableArray * pictureArray;
 
 @end
 
@@ -74,10 +75,12 @@
     if (indexPath.row < self.photoList.count) {
         DBFileInfo * info = self.photoList[indexPath.row];
         DefaultCell * defaultCell = (DefaultCell *) cell;
+     
         [[DropBoxManager sharedDropBoxManager] fetchImageAtPath:info.path
                                                         thumbOK:YES
-                                                    destination:defaultCell.thumbnail];
+                                                    destination:defaultCell.imageView];
         defaultCell.name.text = info.path.name;
+        
         
         defaultCell.dateModified.text = [[self dateFormatter] stringFromDate:info.modifiedTime ];
     }

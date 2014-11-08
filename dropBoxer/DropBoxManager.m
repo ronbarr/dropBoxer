@@ -138,12 +138,16 @@
             photoFile = [self.fileSystem openFile:path
                                             error:&error];
         }
-        
-        if (!error) {
-            returnedPhoto = [UIImage imageWithData:[photoFile readData:&error]];
+        DBFileStatus *fileStatus = photoFile.status;
+        if (fileStatus.cached){
+            // There is local image data to display in this cell
+            
+            returnedPhoto = [UIImage imageWithData:[photoFile readData:nil]];
         }
+        
         dispatch_async(dispatch_get_main_queue(), ^{
             photo.image = returnedPhoto;
+            returnedPhoto = nil;
         });
     });
     
@@ -157,9 +161,9 @@
 #pragma mark - saving
 -(void) saveImageIntoDefaultDirectory:(UIImage *)image {
     /* saves image asynchronously to dropbox in default directory.
-    1. attempt to create folder. If error is it exists, that's good!
-    2. Use the same technique to incrementally create a unique file name (ripe for optimization)
-    3. Save it. 
+     1. attempt to create folder. If error is it exists, that's good!
+     2. Use the same technique to incrementally create a unique file name (ripe for optimization)
+     3. Save it.
      */
     
     DBFilesystem * fileSystem = self.fileSystem;
@@ -180,12 +184,12 @@
         
         error = nil;
         BOOL success = NO;
-        NSInteger iterator = 0; 
+        NSInteger iterator = 0;
         DBFile * photoFile = nil;
         
         while (!success ) {
             iterator++;
-            NSString * filePath = [NSString stringWithFormat:@"%@/%@%i%@", DIRECTORY, IMAGENAME, iterator, SUFFIX];
+            NSString * filePath = [NSString stringWithFormat:@"%@/%@%li%@", DIRECTORY, IMAGENAME, (long)iterator, SUFFIX];
             path = [[DBPath alloc] initWithString:filePath];
             
             photoFile = [self.fileSystem createFile:path error:&error];

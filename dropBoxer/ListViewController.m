@@ -23,8 +23,6 @@
 
 //Convenience pointers to singletons
 @property (strong, nonatomic) DropBoxManager * dropBoxManager;
-@property (strong, nonatomic) CurrentLocationManager * locationManager;
-
 @end
 
 @implementation ListViewController
@@ -36,9 +34,7 @@
     self.modelController.tableDelegate = self;
     self.tableView.delegate = self.modelController;
     self.tableView.dataSource = self.modelController;
-    self.locationManager = [CurrentLocationManager defaultLocationServicesManager];
-    
-    self.dropBoxManager = [DropBoxManager sharedDropBoxManager];
+     self.dropBoxManager = [DropBoxManager sharedDropBoxManager];
 }
 
 -(void) viewDidAppear:(BOOL)animated {
@@ -46,9 +42,6 @@
     
     if (!self.dropBoxManager.isAuthorized) {
          [self.dropBoxManager authorizeUserInViewController:self];
-    }
-    else if (!self.locationManager) {
-        self.locationManager = [CurrentLocationManager defaultLocationServicesManager];
     }
    
 }

@@ -45,7 +45,6 @@
 		02F5BF2A1A0DE7D700A52C6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F5BF291A0DE7D700A52C6E /* main.m */; };
 		02F5BF2D1A0DE7D700A52C6E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F5BF2C1A0DE7D700A52C6E /* AppDelegate.m */; };
 		02F5BF301A0DE7D700A52C6E /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F5BF2F1A0DE7D700A52C6E /* ListViewController.m */; };
-		02F5BF331A0DE7D700A52C6E /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F5BF321A0DE7D700A52C6E /* MapViewController.m */; };
 		02F5BF361A0DE7D700A52C6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F5BF341A0DE7D700A52C6E /* Main.storyboard */; };
 		02F5BF381A0DE7D700A52C6E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F5BF371A0DE7D700A52C6E /* Images.xcassets */; };
 		02F5BF3B1A0DE7D700A52C6E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02F5BF391A0DE7D700A52C6E /* LaunchScreen.xib */; };
@@ -63,7 +62,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		023FC37A1A0E466F004F2070 /* ListControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListControllerDelegate.h; sourceTree = "<group>"; };
 		023FC37B1A0E46CB004F2070 /* ModelControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelControllerDelegate.h; sourceTree = "<group>"; };
 		023FC37F1A0E5325004F2070 /* defaultCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defaultCell.h; sourceTree = "<group>"; };
 		023FC3801A0E5325004F2070 /* defaultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = defaultCell.m; sourceTree = "<group>"; };
@@ -116,8 +114,6 @@
 		02F5BF2C1A0DE7D700A52C6E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		02F5BF2E1A0DE7D700A52C6E /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		02F5BF2F1A0DE7D700A52C6E /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
-		02F5BF311A0DE7D700A52C6E /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
-		02F5BF321A0DE7D700A52C6E /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		02F5BF351A0DE7D700A52C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02F5BF371A0DE7D700A52C6E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		02F5BF3A1A0DE7D700A52C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -152,6 +148,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		028B79A21A0EC28D00F8F852 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				025039C71A0E837500D9656D /* CurrentLocationManager.h */,
+				025039C81A0E837500D9656D /* CurrentLocationManager.m */,
+				02C1F2491A0E10450072655D /* DropBoxManager.h */,
+				02C1F24A1A0E10450072655D /* DropBoxManager.m */,
+				02C1F29C1A0E2D0A0072655D /* Keys.h */,
+				02C1F29D1A0E2D0A0072655D /* Keys.m */,
+				02C1F24F1A0E10950072655D /* ModelController.h */,
+				02C1F2501A0E10950072655D /* ModelController.m */,
+				023FC37B1A0E46CB004F2070 /* ModelControllerDelegate.h */,
+				025039CA1A0E877800D9656D /* UIImage+AddGPS.h */,
+				025039CB1A0E877800D9656D /* UIImage+AddGPS.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		028B79A31A0EC2A200F8F852 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02F5BF341A0DE7D700A52C6E /* Main.storyboard */,
+				023FC37F1A0E5325004F2070 /* defaultCell.h */,
+				023FC3801A0E5325004F2070 /* defaultCell.m */,
+				02F5BF391A0DE7D700A52C6E /* LaunchScreen.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		028B79A41A0EC2BA00F8F852 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				02C1F2521A0E11900072655D /* CameraController.h */,
+				02C1F2531A0E11900072655D /* CameraController.m */,
+				023FC3851A0E5953004F2070 /* DetailController.h */,
+				023FC3861A0E5953004F2070 /* DetailController.m */,
+				02F5BF2E1A0DE7D700A52C6E /* ListViewController.h */,
+				02F5BF2F1A0DE7D700A52C6E /* ListViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		02C1F2791A0E1C480072655D /* bar button images */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,33 +252,12 @@
 		02F5BF261A0DE7D700A52C6E /* dropBoxer */ = {
 			isa = PBXGroup;
 			children = (
-				02F5BF341A0DE7D700A52C6E /* Main.storyboard */,
+				028B79A21A0EC28D00F8F852 /* Model */,
+				028B79A31A0EC2A200F8F852 /* View */,
+				028B79A41A0EC2BA00F8F852 /* Controller */,
 				02F5BF2B1A0DE7D700A52C6E /* AppDelegate.h */,
 				02F5BF2C1A0DE7D700A52C6E /* AppDelegate.m */,
-				02C1F2521A0E11900072655D /* CameraController.h */,
-				02C1F2531A0E11900072655D /* CameraController.m */,
-				025039C71A0E837500D9656D /* CurrentLocationManager.h */,
-				025039C81A0E837500D9656D /* CurrentLocationManager.m */,
-				023FC37F1A0E5325004F2070 /* defaultCell.h */,
-				023FC3801A0E5325004F2070 /* defaultCell.m */,
-				023FC3851A0E5953004F2070 /* DetailController.h */,
-				023FC3861A0E5953004F2070 /* DetailController.m */,
-				02C1F2491A0E10450072655D /* DropBoxManager.h */,
-				02C1F24A1A0E10450072655D /* DropBoxManager.m */,
-				025039CA1A0E877800D9656D /* UIImage+AddGPS.h */,
-				025039CB1A0E877800D9656D /* UIImage+AddGPS.m */,
 				02F5BF371A0DE7D700A52C6E /* Images.xcassets */,
-				02C1F29C1A0E2D0A0072655D /* Keys.h */,
-				02C1F29D1A0E2D0A0072655D /* Keys.m */,
-				02F5BF391A0DE7D700A52C6E /* LaunchScreen.xib */,
-				023FC37A1A0E466F004F2070 /* ListControllerDelegate.h */,
-				02F5BF2E1A0DE7D700A52C6E /* ListViewController.h */,
-				02F5BF2F1A0DE7D700A52C6E /* ListViewController.m */,
-				02F5BF311A0DE7D700A52C6E /* MapViewController.h */,
-				02F5BF321A0DE7D700A52C6E /* MapViewController.m */,
-				02C1F24F1A0E10950072655D /* ModelController.h */,
-				02C1F2501A0E10950072655D /* ModelController.m */,
-				023FC37B1A0E46CB004F2070 /* ModelControllerDelegate.h */,
 				02C1F2861A0E1F090072655D /* Frameworks */,
 				02F5BF271A0DE7D700A52C6E /* Supporting Files */,
 			);
@@ -394,7 +411,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02F5BF331A0DE7D700A52C6E /* MapViewController.m in Sources */,
 				02C1F24B1A0E10450072655D /* DropBoxManager.m in Sources */,
 				025039CC1A0E877800D9656D /* UIImage+AddGPS.m in Sources */,
 				023FC3871A0E5953004F2070 /* DetailController.m in Sources */,
