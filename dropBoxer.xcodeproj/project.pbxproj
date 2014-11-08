@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		023FC3811A0E5325004F2070 /* defaultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 023FC3801A0E5325004F2070 /* defaultCell.m */; };
 		023FC3871A0E5953004F2070 /* DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 023FC3861A0E5953004F2070 /* DetailController.m */; };
+		025039C91A0E837500D9656D /* CurrentLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 025039C81A0E837500D9656D /* CurrentLocationManager.m */; };
+		025039CC1A0E877800D9656D /* UIImage+AddGPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 025039CB1A0E877800D9656D /* UIImage+AddGPS.m */; };
 		02C1F24B1A0E10450072655D /* DropBoxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C1F24A1A0E10450072655D /* DropBoxManager.m */; };
 		02C1F2511A0E10950072655D /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C1F2501A0E10950072655D /* ModelController.m */; };
-		02C1F2541A0E11900072655D /* CameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C1F2531A0E11900072655D /* CameraManager.m */; };
+		02C1F2541A0E11900072655D /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02C1F2531A0E11900072655D /* CameraController.m */; };
 		02C1F2611A0E19750072655D /* globe_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F2551A0E19750072655D /* globe_filled.png */; };
 		02C1F2621A0E19750072655D /* globe_filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F2561A0E19750072655D /* globe_filled@2x.png */; };
 		02C1F2631A0E19750072655D /* globe_filled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02C1F2571A0E19750072655D /* globe_filled@3x.png */; };
@@ -66,12 +68,16 @@
 		023FC3801A0E5325004F2070 /* defaultCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = defaultCell.m; sourceTree = "<group>"; };
 		023FC3851A0E5953004F2070 /* DetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
 		023FC3861A0E5953004F2070 /* DetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
+		025039C71A0E837500D9656D /* CurrentLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentLocationManager.h; sourceTree = "<group>"; };
+		025039C81A0E837500D9656D /* CurrentLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentLocationManager.m; sourceTree = "<group>"; };
+		025039CA1A0E877800D9656D /* UIImage+AddGPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AddGPS.h"; sourceTree = "<group>"; };
+		025039CB1A0E877800D9656D /* UIImage+AddGPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AddGPS.m"; sourceTree = "<group>"; };
 		02C1F2491A0E10450072655D /* DropBoxManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropBoxManager.h; sourceTree = "<group>"; };
 		02C1F24A1A0E10450072655D /* DropBoxManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropBoxManager.m; sourceTree = "<group>"; };
 		02C1F24F1A0E10950072655D /* ModelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
 		02C1F2501A0E10950072655D /* ModelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
-		02C1F2521A0E11900072655D /* CameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraManager.h; sourceTree = "<group>"; };
-		02C1F2531A0E11900072655D /* CameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraManager.m; sourceTree = "<group>"; };
+		02C1F2521A0E11900072655D /* CameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraController.h; sourceTree = "<group>"; };
+		02C1F2531A0E11900072655D /* CameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraController.m; sourceTree = "<group>"; };
 		02C1F2551A0E19750072655D /* globe_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe_filled.png; sourceTree = "<group>"; };
 		02C1F2561A0E19750072655D /* globe_filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "globe_filled@2x.png"; sourceTree = "<group>"; };
 		02C1F2571A0E19750072655D /* globe_filled@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "globe_filled@3x.png"; sourceTree = "<group>"; };
@@ -208,14 +214,18 @@
 				02F5BF341A0DE7D700A52C6E /* Main.storyboard */,
 				02F5BF2B1A0DE7D700A52C6E /* AppDelegate.h */,
 				02F5BF2C1A0DE7D700A52C6E /* AppDelegate.m */,
-				02C1F2521A0E11900072655D /* CameraManager.h */,
-				02C1F2531A0E11900072655D /* CameraManager.m */,
+				02C1F2521A0E11900072655D /* CameraController.h */,
+				02C1F2531A0E11900072655D /* CameraController.m */,
+				025039C71A0E837500D9656D /* CurrentLocationManager.h */,
+				025039C81A0E837500D9656D /* CurrentLocationManager.m */,
 				023FC37F1A0E5325004F2070 /* defaultCell.h */,
 				023FC3801A0E5325004F2070 /* defaultCell.m */,
 				023FC3851A0E5953004F2070 /* DetailController.h */,
 				023FC3861A0E5953004F2070 /* DetailController.m */,
 				02C1F2491A0E10450072655D /* DropBoxManager.h */,
 				02C1F24A1A0E10450072655D /* DropBoxManager.m */,
+				025039CA1A0E877800D9656D /* UIImage+AddGPS.h */,
+				025039CB1A0E877800D9656D /* UIImage+AddGPS.m */,
 				02F5BF371A0DE7D700A52C6E /* Images.xcassets */,
 				02C1F29C1A0E2D0A0072655D /* Keys.h */,
 				02C1F29D1A0E2D0A0072655D /* Keys.m */,
@@ -382,9 +392,11 @@
 			files = (
 				02F5BF331A0DE7D700A52C6E /* MapViewController.m in Sources */,
 				02C1F24B1A0E10450072655D /* DropBoxManager.m in Sources */,
+				025039CC1A0E877800D9656D /* UIImage+AddGPS.m in Sources */,
 				023FC3871A0E5953004F2070 /* DetailController.m in Sources */,
+				025039C91A0E837500D9656D /* CurrentLocationManager.m in Sources */,
 				02F5BF2D1A0DE7D700A52C6E /* AppDelegate.m in Sources */,
-				02C1F2541A0E11900072655D /* CameraManager.m in Sources */,
+				02C1F2541A0E11900072655D /* CameraController.m in Sources */,
 				02C1F2511A0E10950072655D /* ModelController.m in Sources */,
 				02C1F29E1A0E2D0A0072655D /* Keys.m in Sources */,
 				02F5BF301A0DE7D700A52C6E /* ListViewController.m in Sources */,

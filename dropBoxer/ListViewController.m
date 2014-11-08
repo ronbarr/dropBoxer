@@ -14,11 +14,15 @@
 
 @interface ListViewController ()
 
+//The delegate and datasource for the list
 @property (strong, nonatomic) ModelController * modelController;
 
+//The image to show in the detail view
 @property (strong, nonatomic) DBPath * detailImagePath;
 
+//Convenience pointers to singleton
 @property (strong, nonatomic) DropBoxManager * dropBoxManager;
+
 
 @end
 
@@ -32,6 +36,7 @@
     self.tableView.delegate = self.modelController;
     self.tableView.dataSource = self.modelController;
     self.dropBoxManager = [DropBoxManager sharedDropBoxManager];
+
 }
 
 -(void) viewDidAppear:(BOOL)animated {

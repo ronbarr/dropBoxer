@@ -146,7 +146,7 @@
         <!--Take Picture-->
         <scene sceneID="GKX-GK-cgu">
             <objects>
-                <viewController id="f0a-2T-XCw" customClass="MapViewController" sceneMemberID="viewController">
+                <viewController id="f0a-2T-XCw" customClass="CameraController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="acc-u4-etL"/>
                         <viewControllerLayoutGuide type="bottom" id="TJT-pw-KSe"/>

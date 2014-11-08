@@ -19,6 +19,8 @@
 
 -(void) fetchImageAtPath:(DBPath *) path thumbOK:(BOOL) thumbOK destination:(UIImageView *) photo ;
 
+-(void) saveImageIntoDefaultDirectory:(UIImage *)image ;
+
 -(NSArray *) photoList;
 
 @end

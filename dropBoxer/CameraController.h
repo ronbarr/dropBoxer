@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CameraManager : NSObject
+@interface CameraController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
-+(instancetype) sharedCameraManager;
 
 @end
